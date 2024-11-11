@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="CSS/font.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <!-- frames -->
+    <link rel="stylesheet" href="CSS/frames.css" />
+
+    <title>Foodyss</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-success navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">
+            <span class="logo">Foodyss</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Menu</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Slider -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide mb-5"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active custom-image">
+            <img src="Images/Banner 1.jpg" class="d-block w-100" alt="Burger" />
+          </div>
+          <div class="carousel-item custom-image">
+            <img src="Images/Banner 2.jpg" class="d-block w-100" alt="Wrap" />
+          </div>
+          <div class="carousel-item custom-image">
+            <img src="Images/Banner 3.jpg" class="d-block w-100" alt="Pizza" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Heading -->
+      <h1 class="text-center my-5 text-success">Our Menu</h1>
+      <!-- Tabs -->
+      <ul
+        class="nav nav-tabs d-flex justify-content-center align-items-center bg-success my-5"
+      >
+        <li class="nav-item">
+          <a class="nav-link text-white" aria-current="page" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Burgers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Wraps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Pizza</a>
+        </li>
+      </ul>
+      <!-- Cards -->
+      <!-- Burger Cards -->
+      <h2 class="text-center my-5">Burgers</h2>
+      <div class="container my-5">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 1.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 01</div>
+              <div class="card-text">
+                Four Zinger burger with four large fries and large beverage.
+              </div>
+              <div class="card-text">Rs.1399</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 2.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 02</div>
+              <div class="card-text">
+                Four crunch burger with four large fries and a large beverage.
+              </div>
+              <div class="card-text">Rs.1199</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 3.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 03</div>
+              <div class="card-text">
+                Four fish zinger burgers with four large fries and a large beverage.
+              </div>
+              <div class="card-text">Rs.1599</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Banner 1.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 04</div>
+              <div class="card-text">
+                Four chicken burgers with four large fries and a large beverage.
+              </div>
+              <div class="card-text">Rs.999</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Wraps -->
+      <h2 class="text-center my-5">Wraps</h2>
+      <div class="container my-5">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 5.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 01</div>
+              <div class="card-text">
+                Six wraps with our special sauce, four medium fries and a large beverage (Select any).
+              </div>
+              <div class="card-text">Rs.1299</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 6.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 02</div>
+              <div class="card-text">
+                Four zinger wraps with 2 large fries and a large beverage (Special sauce not included).
+              </div>
+              <div class="card-text">Rs.799</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 7.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 03</div>
+              <div class="card-text">
+                Four fish wraps with our special sauce and 4 medium fries and a large beverage.
+              </div>
+              <div class="card-text">Rs.1199</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 8.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 04</div>
+              <div class="card-text">
+                Four chicken wraps with our special sauce and 4 large fries and a large beverage.
+              </div>
+              <div class="card-text">Rs.999</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Pizzas -->
+      <h2 class="text-center my-5">Pizzas</h2>
+      <div class="container my-5">
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 9.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 01</div>
+              <div class="card-text">
+                Two large pizzas with a large beverage.
+              </div>
+              <div class="card-text">Rs.899</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 10.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 02</div>
+              <div class="card-text">
+                Four large pizzas, four club sandwichs, four large fries, with two large beverage.
+              </div>
+              <div class="card-text">Rs.2399</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 11.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 03</div>
+              <div class="card-text">
+                Four regular pizzas and two 1.5ltr beverage.
+              </div>
+              <div class="card-text">Rs.1199</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2 mb-lg-0">
+            <div class="card-sl">
+              <div class="card-image">
+                <img src="Images/Card 12.jpg" />
+              </div>
+
+              <div class="card-heading">Deal 04</div>
+              <div class="card-text">
+                Six small pizzas and a large beverage.
+              </div>
+              <div class="card-text">Rs.799</div>
+              <a href="#" class="card-button bg-success"> Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Form -->
+      
+       <div class="form-container bg-success" id="form">
+
+        <div class="form-div my-5">
+          <div class="left form-div-2">
+            <div class="header">
+              <h2 class="animation a1">Welcome Back</h2>
+              <h4 class="animation a2">Log in to your account using email and password</h4>
+            </div>
+            <div class="form">
+              <input type="email" class="form-field animation a3" placeholder="Email Address">
+              <input type="password" class="form-field animation a4" placeholder="Password">
+              <p class="animation a5"><a class="forgot" href="#">Forgot Password</a></p>
+              <button class="animation a6">LOGIN</button>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="container mt-5 foot bg-success">
+      <!-- Footer -->
+      <footer class="text-center text-lg-start text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Coursing</h6>
+                <p>Develop your skills and be valuable in the open market by helping other coders in open-source projects.</p>
+              </div>
+              <!-- Grid column -->
+  
+              <hr class="w-100 clearfix d-md-none" />
+  
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Courses</h6>
+                <p><a class="text-white">HTML, CSS, & JS</a></p>
+                <p><a class="text-white">React JS & Next JS</a></p>
+                <p><a class="text-white">Github & Netlify</a></p>
+                <p><a class="text-white">MongoDB & PostgreSQL</a></p>
+              </div>
+  
+              <hr class="w-100 clearfix d-md-none" />
+  
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+  
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+                <!-- Facebook -->
+                <a class="btn btn-primary btn-floating m-1 btn-facebook" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-primary btn-floating m-1 btn-twitter" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+                <!-- Google -->
+                <a class="btn btn-primary btn-floating m-1 btn-google" href="#!" role="button"><i class="fab fa-google"></i></a>
+                <!-- Instagram -->
+                <a class="btn btn-primary btn-floating m-1 btn-instagram" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                <!-- Linkedin -->
+                <a class="btn btn-primary btn-floating m-1 btn-linkedin" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Github -->
+                <a class="btn btn-primary btn-floating m-1 btn-github" href="#!" role="button"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </section>
+        </div>
+  
+        <!-- Copyright -->
+        <div class="text-center p-3 footer-copyright">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">Coursing.com</a>
+        </div>
+      </footer>
+    </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

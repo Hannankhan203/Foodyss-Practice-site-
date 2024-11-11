@@ -1,0 +1,1 @@
+Navbar, Slider, Heading (Our menu) Tabs, Cards, Contact, Footer
